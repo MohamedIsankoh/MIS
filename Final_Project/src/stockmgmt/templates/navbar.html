@@ -1,0 +1,81 @@
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+
+      <!-- <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/list_items">List Items</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/add_items">Add Item</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/add_category">Add Category</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/add_invoice">Add Invoice</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/list_invoice">List Invoice</a>
+      </li> -->
+      
+
+      
+    </ul>
+    <form class="form-inline mt-2 mt-md-0">
+      <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"></button> -->
+    </form>
+  </div>
+</nav>
+
+
+
+
+<div class="mymenu-bar">
+  <br>
+  <li class="nav-item active">
+    <h4>MEDICAL SUPPLY</h4>
+  </li>
+  <br>
+  {% if request.user.is_authenticated %}
+    <li class="nav-item active">
+        <a class="nav-link" href="/"> <h5> Dashboard</h5> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/list_items"><h5>List Items</h5></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/add_items"><h5>Add Item</h5></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/add_category"><h5>Add Category</h5></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/list_history"><h5>List History</h5></a>
+     </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/add_invoice"><h5>New Invoice</h5></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/list_invoice"><h5>List of Invoice</h5></a>
+      </li>
+
+              
+      
+      
+        <a href="/accounts/logout"><button class="btn btn-danger">{{ user }} | Logout</button></a>
+        {% else %}
+        <a href="/accounts/login"><button class="btn btn-danger">Login</button></a>
+      {% endif %}
+      
+</div>

@@ -1,0 +1,142 @@
+body {
+    background-color: #34eb6b;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    }
+
+    .success{
+      list-style: none;
+      background-color: #2e6da4;
+      color: white;
+      box-shadow: 12px 12px 12px #e61c66;
+      text-align: center;
+  }
+
+
+    /*Table paination styling*/
+.paging-nav {
+  text-align: right;
+  padding-top: 2px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.paging-nav a {
+  margin: auto 1px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1px 7px;
+  background: #91b9e6;
+  color: white;
+  border-radius: 100px;
+}
+
+.paging-nav .selected-page {
+  background: #187ed5;
+  font-weight: bold;
+}
+/* End Table paination styling*/
+
+/*Align the title to the center of the page*/
+.table{
+	font-size: 13px;
+	text-align: center;
+	width: 95%;
+	margin: auto;
+	
+}
+
+/*Make alternating colors for the table rows*/
+.table tr:nth-child(odd){
+	background: #B8CAE4
+}
+
+.table tr:nth-child(even){
+	background: #dae5f4
+}
+
+th {
+  background-color: #337ab7;
+  color: white;
+}
+
+.display_table{
+	border-bottom-right-radius: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 20px;
+	box-shadow: 12px 12px 20px 6px #2e6da4;
+}
+
+.header {
+    font-family: helvetica;
+    color: #337ab7;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 6px 6px 6px #c9c6c6;
+    display: block;
+    font-weight: bolder;
+}
+
+.success{
+  list-style: none;
+  background-color: #2e6da4;
+  color: white;
+  box-shadow: 12px 12px 12px #e61c66;
+  text-align: center;
+}
+
+
+
+
+
+.mymenu-bar {
+  background-color: #12486B;
+  color: white;
+  display: inline;
+  text-emphasis-color: rgb(57, 6, 6);
+  padding: 10px;
+  position: fixed;
+  height: 100%;
+  bottom: 0px;
+  left: -90px;
+  z-index: 3000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.mymenu-bar li {
+  list-style: none; /* Removes the dot */
+}
+
+.mymenu-bar:hover {
+  left: 0px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.mymenu-bar {
+  background-color: #176B87;
+  color: white;
+  /* other styles */
+}
+
+.mymenu-bar a {
+  color: white;
+  text-decoration: none; /* optional: removes underlines from links */
+}
+
+
+/* Invoice css */
+.myForm form{
+	box-shadow: 10px 10px 10px;
+	box-shadow: 12px 12px 12px #2e6da4;
+	border: 1px solid #2e6da4;
+	padding: 50px;
+	padding-bottom: 20px;
+}
